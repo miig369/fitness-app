@@ -4,6 +4,9 @@ import { SelectedPage } from "./shared/types";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Benefits from "./components/Benefits";
+import OurClasses from "./components/classes";
+import Footer from "./components/footer";
+import ContactUs from "./components/contact";
 
 
 function App() {
@@ -28,6 +31,9 @@ function App() {
       <Navbar  isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <Hero setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   )
 }
